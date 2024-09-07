@@ -1,16 +1,16 @@
 from random import *
-a=["1","2","3","4","5","6","7","8","9","q","w","e","r","t","y"\
-   "u","i","o","p","a","s","d","f","g","h","j"\
-   "k","l","z","x","c","v","b","n","m",
+array = [ "1" , "2" , "3" , "4" , "5" , "6" , "7" , "8" , "9" , "q" , "w" , "e" , "r" , "t" , "y" \
+   "u" , "i" , "o" , "p" , "a" , "s" , "d" , "f" , "g" , "h" , "j" \
+   "k" , "l" , "z" , "x" , "c" , "v" , "b" , "n" , "m" ,
    ]
-r=input("ramz : ")
+guess = input ( " guess the password : " )
 
-k=0
+counter = 0
 
 while True :
-    c="".join(sample(a,4))
-    if (r[0]==c[0]) and (r[1]==c[1]) and (r[2]==c[2]) and (r[3]==c[3]) :
-        print(r ,"==", c)
+    password = "" . join ( sample ( array , 4 ) )
+    if ( guess [0] == password [0] ) and (guess [1] == password [1] ) and ( guess [2] == password [2] ) and ( guess [3] == password [3] ) :
+        print ( guess , "==" , password )
         break
-    k+=1
-    print(f"ramz dorost nist : {k} ")
+    counter += 1
+    print ( f" The password entered is not correct for the {counter} th time . Please enter the correct password :" )
