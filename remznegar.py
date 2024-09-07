@@ -13,4 +13,4 @@ while True :
         print ( guess , "==" , password )
         break
     counter += 1
-    print ( f" The password entered is not correct for the {counter} th time . Please enter the correct password :" )
+    print ( f" Your password has been checked on the {counter}th . " )
